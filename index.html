@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <!-- Head -->
+
   <head>
     <title>Newsweek</title>
 
@@ -8,12 +9,14 @@
     <link href="css/navbar.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <link href="css/sidebar.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
 
   <!-- Body -->
+
   <body>
     <!-- Navbar -->
-    <nav class="topnav navbar navbar-inverse navbar-static-top" role="navigation">
+    <nav class="topnav navbar navbar-inverse navbar-static-top" role="navigation" id="main-nav">
       <div class="container-fluid">
         <div class="navbar-header hidden-xs">
           <a href="#" class="pull-left">
@@ -42,11 +45,13 @@
             </li>
             <li class="divider-vertical"></li>
             <li class="dropdown dropdown-style-sm-hamburger">
-              <a href="#" id="hamburger" class="dropdown-toggle glyphicon glyphicon-menu-hamburger" data-toggle="dropdown"></a>
+              <a href="#" id="hamburger" class="dropdown-toggle glyphicon glyphicon-menu-hamburger"
+                data-toggle="dropdown"></a>
               <div class="banner-width-set">
               </div>
             </li>
           </ul>
+          <
           <!-- lg Screen Nav Bar -->
           <ul class="nav navbar-nav navbar-right visible-lg visible-md">
             <li class="divider-vertical"></li>
@@ -63,7 +68,8 @@
             </li>
             <li class="divider-vertical"></li>
             <li class="dropdown dropdown-style">
-              <a href="#" id="map-marker" class="dropdown-toggle glyphicon glyphicon-map-marker" data-toggle="dropdown"></a>
+              <a href="#" id="map-marker" class="dropdown-toggle glyphicon glyphicon-map-marker"
+                data-toggle="dropdown"></a>
             </li>
             <li class="divider-vertical"></li>
             <li><a href="#">Sign In</a>
@@ -78,15 +84,68 @@
     <div class="container-fluid main-content">
       <div class="row">
 
-        <div>
-        <!--Main-->
+        <div class="col-md-9 col-sm-12 col-xs-12">
+          <!--Main-->
+          <div id="main-article">
+            <img src="images/main/main_main.jpg" class="img-responsive" id="img-main">
+            <div id="main-caption">
+              <h4 id="main-country"><a>U.S.</a></h4>
+              <h1 id="main-title"><a>JUSTICE DEPT. TO FORCE REFORMS</a></h1>
+              <h6 id="main-description">"The residents of Ferguson have waited nearly a year for their city to adopt
+                an agreement."</h6>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-sm-6 col-xs-12">
+              <div id="second-article">
+                <img src="images/main/main1.png" class="img-responsive" id="img-second">
+                <div id="second-caption">
+                  <h4 id="second-country"><a>U.S.</a></h4>
+                  <h1 id="second-title"><a>GRAVITATIONAL WAVES DETECTED, PROVING EINSTEIN RIGHT</a></h1>
+                  <h6 id="second-description">“This [was] truly a scientific moon shot, and we landed on the moon.”/h6>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-sm-6 col-xs-12">
+              <div id="third-article">
+                <img src="images/main/main2.jpg" class="img-responsive" id="img-third">
+                <div id="third-caption">
+                  <h4 id="third-type"><a>SPONSOR INSIGHT</a></h4>
+                  <h1 id="third-title"><a>THE BEST UNIVERSITIES OF ASIA</a></h1>
+                  <h6 id="third-description">"Universities from Asia and Europe are challenging the best schools in the
+                    USA. When it comes to choosing the right school then, the options have never been more diverse…"
+                  </h6>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
         </div>
 
-        <div>
-        <!--Side Menu-->
+        <div class="col-md-3 col-sm-12 col-xs-12">
+          <!--Side Menu-->
+          <div id="sidebar">
+            <h3 id="sidebar-title">
+              LATEST HEADLINES
+            </h3>
+            <ul id="side-articles">
+              <li><a>Harriet Harman: The New Law on Gender Pay was Labour's</a></li>
+              <li><a>French Court Will Hear Facebook Nude Painting Case</a></li>
+              <li><a>Rolf Harris Faces Seven Indecent Assault Charges</a></li>
+              <li><a>U.K. Airbnb Host Rejects Israeli for 'Occupying Lands'</a></li>
+              <li><a>Watch: Real Madrid's Pepe Gets Into Valentine's Spirit</a></li>
+              <li><a>Indonesia Blocking Gay Emojis From Facebook, Whatsapp</a></li>
+              <li><a>Mourinho and Woodward ‘Cannot Have Spoken’ - Van Gaal</a></li>
+              <li><a>Rwanda to Relocate Burundian Refugees</a></li>
+            </ul>
+            <button class="btn btn-default">See All Headlines</button>
+          </div>
         </div>
 
       </div>
+
     </div>
 
 
@@ -96,4 +155,5 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
   </body>
+
 </html>
